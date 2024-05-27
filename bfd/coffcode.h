@@ -1944,7 +1944,7 @@ coff_set_alignment_hook (bfd *abfd, asection *section, void * scnhdr)
 }
 
 #else /* ! RS6000COFF_C */
-#if defined (COFF_GO32_EXE) || defined (COFF_GO32)
+#if defined (COFF_GO32_EXE) || defined (COFF_GO32) || defined(COFF_STUPID)
 
 static void
 coff_set_alignment_hook (bfd * abfd, asection * section, void * scnhdr)
@@ -3881,7 +3881,7 @@ coff_write_object_contents (bfd * abfd)
 #endif
 #endif
 
-#if defined (COFF_GO32_EXE) || defined (COFF_GO32)
+#if defined (COFF_GO32_EXE) || defined (COFF_GO32) || defined(COFF_STUPID)
   /* Pad section headers.  */
   if ((abfd->flags & EXEC_P) && abfd->sections != NULL)
     {

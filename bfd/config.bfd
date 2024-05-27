@@ -603,6 +603,10 @@ case "${targ}" in
     want64=true
     ;;
 #endif
+  i[3-7]86-*-stupidos*)
+    targ_defvec=i386_coff_stupidos_vec
+    targ_selvecs="i386_aout_vec"
+    ;;
   i[3-7]86-*-nto*)
     targ_defvec=i386_elf32_vec
     targ_selvecs="iamcu_elf32_vec i386_coff_vec"

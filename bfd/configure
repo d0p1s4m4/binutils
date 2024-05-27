@@ -13907,6 +13907,7 @@ do
     i386_aout_lynx_vec)		 tb="$tb i386lynx.lo lynx-core.lo aout32.lo" ;;
     i386_coff_vec)		 tb="$tb coff-i386.lo $coff" ;;
     i386_coff_go32_vec)		 tb="$tb coff-go32.lo $coff" ;;
+    i386_coff_stupidos_vec)	 tb="$tb coff-stupidos.lo $coff" ;;
     i386_coff_go32stubbed_vec)	 tb="$tb coff-stgo32.lo $coff" ;;
     i386_coff_lynx_vec)		 tb="$tb cf-i386lynx.lo lynx-core.lo $coff" ;;
     i386_elf32_vec)		 tb="$tb elf32-i386.lo $elfxx_x86 elf32.lo $elf" ;;
